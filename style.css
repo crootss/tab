@@ -1,32 +1,32 @@
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    box-sizing: border-box;
+    background-color: #121212;
+    color: #fff;
 }
-
 
 .navbar {
     display: flex;
-    flex-wrap: wrap; /* Untuk mobile */
-    justify-content: center; /* Pusatkan tab di mobile */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #1f1f1f;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Pastikan lebar penuh */
+    width: 100%;
 }
 
 .tabs {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Supaya tab tidak keluar layar di mobile */
-    justify-content: center; /* Pusatkan konten */
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 .tab {
-    margin: 5px; /* Berikan jarak agar terlihat rapi di mobile */
+    margin: 5px;
     padding: 8px 16px;
     cursor: pointer;
     color: #fff;
@@ -39,27 +39,4 @@ body, html {
 .tab.active {
     border-bottom: 2px solid #00ff00;
     color: #00ff00;
-}
-
-.tab-content {
-    padding: 20px; /* Jarak isi konten */
-    margin: 20px auto; /* Tengah di layar */
-    width: 90%; /* Sesuaikan untuk layar kecil */
-    max-width: 600px; /* Batas maksimal di layar besar */
-    background-color: #181818; /* Warna latar belakang */
-    border-radius: 8px; /* Efek rounded di sudut */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan */
-    box-sizing: border-box; /* Memastikan padding masuk dalam width */
-}
-
-
-/* Tambahkan media query untuk tampilan lebih kecil */
-@media (max-width: 768px) {
-    .tab-content {
-        width: 95%; /* Lebar menyesuaikan layar */
-    }
-
-    .tab {
-        font-size: 14px; /* Sesuaikan ukuran teks */
-    }
 }
