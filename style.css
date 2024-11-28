@@ -45,14 +45,16 @@ body {
 }
 
 .tab-content {
-    padding: 20px;
-    margin-top: 20px;
-    width: 90%; /* Supaya tidak terlalu lebar di layar kecil */
-    max-width: 600px; /* Batas maksimal lebar di desktop */
-    background-color: #181818;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Jarak isi konten */
+    margin: 20px auto; /* Tengah di layar */
+    width: 90%; /* Sesuaikan untuk layar kecil */
+    max-width: 600px; /* Batas maksimal di layar besar */
+    background-color: #181818; /* Warna latar belakang */
+    border-radius: 8px; /* Efek rounded di sudut */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan */
+    box-sizing: border-box; /* Memastikan padding masuk dalam width */
 }
+
 
 /* Tambahkan media query untuk tampilan lebih kecil */
 @media (max-width: 768px) {
